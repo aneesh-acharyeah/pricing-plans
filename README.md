@@ -17,8 +17,10 @@ This project includes three pricing tiers (Basic, Pro, and Enterprise) with a cl
 - CSS3 (Flexbox, Responsive Design)
 
 ## 📂 Project Structure
+`code`
 
   pricing-plans/
   ├─ index.html
   ├─ style.css
   └─ README.md
+``
