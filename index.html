@@ -9,11 +9,20 @@
 <body>
   <section class="pricing-section">
     <h1>Choose Your Plan</h1>
+
+    <div class="billing-toggle">
+      <span>Monthly</span>
+      <label class="switch">
+        <input type="checkbox" id="billingSwitch" />
+        <span class="slider"></span>
+      </label>
+      <span>Yearly <small class="save">Save 20%</small></span>
+    </div>
+
     <div class="pricing-cards">
-      
-      <div class="card">
+      <div class="card" data-plan="basic">
         <h2>Basic</h2>
-        <p class="price">$9<span>/mo</span></p>
+        <p class="price" data-month="9" data-year="86">$9<span>/mo</span></p>
         <ul>
           <li>✅ 5 Projects</li>
           <li>✅ Basic Support</li>
@@ -22,10 +31,10 @@
         <a href="#" class="btn">Get Started</a>
       </div>
 
-      <div class="card recommended">
+      <div class="card recommended" data-plan="pro">
         <div class="badge">Most Popular</div>
         <h2>Pro</h2>
-        <p class="price">$29<span>/mo</span></p>
+        <p class="price" data-month="29" data-year="278">$29<span>/mo</span></p>
         <ul>
           <li>✅ 50 Projects</li>
           <li>✅ Priority Support</li>
@@ -34,9 +43,9 @@
         <a href="#" class="btn">Choose Pro</a>
       </div>
 
-      <div class="card">
+      <div class="card" data-plan="enterprise">
         <h2>Enterprise</h2>
-        <p class="price">$99<span>/mo</span></p>
+        <p class="price" data-month="99" data-year="950">$99<span>/mo</span></p>
         <ul>
           <li>✅ Unlimited Projects</li>
           <li>✅ Dedicated Manager</li>
@@ -44,8 +53,9 @@
         </ul>
         <a href="#" class="btn">Contact Sales</a>
       </div>
-
     </div>
   </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
